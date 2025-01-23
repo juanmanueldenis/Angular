@@ -1,0 +1,43 @@
+.drawer {
+  background-color: #ffffff;
+  color: white;
+  width: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.drawer-content {
+  padding: 10px;
+}
+.example-sidenav-content {
+  flex-grow: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+mat-drawer.mat-drawer-opened + .example-sidenav-content {
+  margin-left: 250px;
+}
+button:hover {
+  background-color: #171c1f;
+}
+
+/* Smooth animations */
+.ng-enter, .ng-leave {
+  transition: opacity 0.3s ease-in-out;
+}
+.ng-enter {
+  opacity: 0;
+}
+.ng-enter-active {
+  opacity: 1;
+}
+.ng-leave {
+  opacity: 1;
+}
+.ng-leave-active {
+  opacity: 0;
+}

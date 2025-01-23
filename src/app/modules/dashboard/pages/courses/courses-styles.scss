@@ -1,0 +1,48 @@
+.course-card {
+  margin: 20px;
+  padding: 10px;
+  background-color: #9debb03b;
+  border-radius: 8px;
+}
+
+mat-card-header {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px;
+}
+
+mat-list {
+  margin-top: 10px;
+}
+
+mat-list-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+mat-list-item mat-icon {
+  font-size: 40px;
+  color: #1976d2;
+}
+
+mat-list-item h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+mat-list-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  font-size: 14px;
+  color: #333;
+}
