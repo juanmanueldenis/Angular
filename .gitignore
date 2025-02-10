@@ -1,2 +1,6 @@
 node_modules
+<<<<<<< HEAD
 .angular/cache/
+=======
+.angular/cache/
+>>>>>>> 7c50414dcec121f9217d6441141e7eb56037016d
