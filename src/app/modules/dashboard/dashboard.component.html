@@ -1,25 +1,18 @@
 <mat-drawer-container class="example-container" autosize>
-  <!-- Drawer con submenús y transiciones suaves -->
-  <mat-drawer #drawer class="example-sidenav" mode="side" role="navigation" aria-label="Main Sidebar" class="drawer">
-    <!-- <div class="drawer-header">
-      <button (click)="drawer.toggle()" mat-icon-button aria-label="Toggle drawer">
-      </button>
-    </div> -->
-    
+  <mat-drawer #drawer class="example-sidenav" mode="side" role="navigation" class="drawer">
     <div class="drawer-content">
       <mat-nav-list>
-        <mat-list-item >INICIO</mat-list-item>
-        <mat-list-item >ESTUDIANTES</mat-list-item>
-        <mat-list-item >CURSOS</mat-list-item>
+        <!-- <mat-list-item [routerLink]="'/'">INICIO</mat-list-item> -->
+        <mat-list-item [routerLink]="'/students'">ESTUDIANTES</mat-list-item>
+        <mat-list-item [routerLink]="'/courses'">CURSOS</mat-list-item>
       </mat-nav-list>
     </div>
   </mat-drawer>
 
-  <!-- Main content with smooth transitions -->
   <div class="example-sidenav-content">
     <app-toolbar (drawerToggle)="drawer.toggle()"></app-toolbar>
     <main>
-      <app-students></app-students>
+      <router-outlet></router-outlet> <!-- Aquí se carga la página actual -->
     </main>
   </div>
 </mat-drawer-container>
