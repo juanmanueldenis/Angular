@@ -23,6 +23,7 @@ export class CoursesComponent implements OnInit {
     this.courses = []; // Asegura que el array esté vacío antes de cargar los datos
 
     this.coursesService.getCourses().subscribe(data => {
+      console.log('Datos recibidos:', data);
       this.courses = data;
     });
   }
