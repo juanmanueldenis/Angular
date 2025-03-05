@@ -1,22 +1,14 @@
 [
   {
     "id": 1,
-    "name": "INGLES"
+    "name": "Nuevo Curso 1"
   },
   {
     "id": 2,
-    "name": "MATEMATICAS"
+    "name": "Nuevo Curso 2"
   },
   {
     "id": 3,
-    "name": "PROGRAMACION"
-  },
-  {
-    "id": 4,
-    "name": "klñiliyilygil"
-  },
-  {
-    "id": 5,
-    "name": "Dalila"
+    "name": "Nuevo Curso 3"
   }
 ]

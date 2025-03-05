@@ -4,8 +4,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
-import { HttpClientModule } from '@angular/common/http';
-
+import { provideHttpClient } from '@angular/common/http';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { coursesReducer } from './store/courses.reducer';   
+// import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { CoursesEffects } from './store/courses.effects';
 
 @NgModule({
   declarations: [
@@ -16,10 +20,12 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     DashboardModule,
-    HttpClientModule
+    EffectsModule.forRoot([]),
+    StoreModule.forRoot({ courses: coursesReducer }), 
 
   ],
   providers: [
+    provideHttpClient(),
     provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]

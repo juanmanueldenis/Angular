@@ -1,15 +1,15 @@
 import {
   DomSanitizer
-} from "./chunk-7KZJQSSM.js";
+} from "./chunk-GFDWHBDM.js";
 import {
   HttpClient
-} from "./chunk-3M4FPDDE.js";
+} from "./chunk-LNI2VMPO.js";
 import {
   MatCommonModule
-} from "./chunk-BJMTVFME.js";
+} from "./chunk-SG2PLG6R.js";
 import {
   DOCUMENT
-} from "./chunk-ZXIEUITV.js";
+} from "./chunk-OKLW4AG6.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -49,7 +49,7 @@ import {
   ɵɵinject,
   ɵɵprojection,
   ɵɵprojectionDef
-} from "./chunk-6KZL2HCH.js";
+} from "./chunk-464QFPRW.js";
 
 // node_modules/@angular/material/fesm2022/icon.mjs
 var _c0 = ["*"];
